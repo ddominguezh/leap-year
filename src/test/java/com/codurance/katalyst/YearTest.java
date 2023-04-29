@@ -24,4 +24,10 @@ public class YearTest {
         Year year = Year.create(1800);
         assertFalse(year.isLeapYear());
     }
+
+    @Test
+    public void a_year_is_a_leap_year_if_divisible_by_400(){
+        Year year = Year.create(1600);
+        assertTrue(year.isLeapYear());
+    }
 }
