@@ -1,7 +1,5 @@
 package com.codurance.katalyst;
 
-import java.util.function.BooleanSupplier;
-
 public class Year {
     
     private int value;
@@ -12,6 +10,6 @@ public class Year {
         return new Year(year);
     }
     public boolean isLeapYear() {
-        return null;
+        return false;
     }
 }
