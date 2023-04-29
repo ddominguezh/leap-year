@@ -18,4 +18,10 @@ public class YearTest {
         Year year = Year.create(1996);
         assertTrue(year.isLeapYear());
     }
+
+    @Test
+    public void a_year_is_not_a_leap_year_if_divisible_by_100_but_not_by_400(){
+        Year year = Year.create(1800);
+        assertFalse(year.isLeapYear());
+    }
 }
