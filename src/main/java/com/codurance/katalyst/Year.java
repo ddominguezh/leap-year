@@ -10,6 +10,6 @@ public class Year {
         return new Year(year);
     }
     public boolean isLeapYear() {
-        return false;
+        return value % 4 == 0;
     }
 }
