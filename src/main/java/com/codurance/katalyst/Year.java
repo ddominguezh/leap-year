@@ -10,9 +10,12 @@ public class Year {
         return new Year(year);
     }
     public boolean isLeapYear() {
-        if(value % 100 == 0 && value % 400 != 0){
+        if(isDivisibleBy(100) && !isDivisibleBy(400)){
             return false;
         }
-        return value % 4 == 0;
+        return isDivisibleBy(4);
+    }
+    private boolean isDivisibleBy(int num){
+        return value % num == 0;
     }
 }
